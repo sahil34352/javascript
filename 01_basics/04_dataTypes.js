@@ -62,3 +62,26 @@ myFunction()
        Object  =>  object
 
 */
+
+// *********************************************************************
+
+//  Memory in js
+
+// Stack (Primitive) & Heap (Non- Primitive)
+
+let Numb1=109
+let Numb2=Numb1                            // Here primitve datatype gives a copy 
+Numb2=309                                  
+console.log(Numb1)
+console.log(Numb2)
+
+let myObj1={
+    userName : "sahil",
+    rollno : 45 
+}
+let myObj2=myObj1                             // Here Non primitive datatype gives a reference to another
+myObj2.userName="sahilbhandari"
+console.log(myObj1.userName);
+console.log(myObj2.userName);
+
+
