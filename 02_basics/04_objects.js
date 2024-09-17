@@ -64,3 +64,23 @@ console.log(Object.entries(tinderUser));      // converts objects into 2d array 
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));          // returns true if key is exist in an object or not 
 
+
+// *****************         destructuring  of an object  **********************?????????
+const course = {
+    coursename: "type script",
+    price : "999",
+    courseInstructor: "sahil"
+}
+// course.courseInstructor
+
+const {courseInstructor : inst}=course     // destructure of object 
+// console.log(courseInstructor);
+console.log(inst);
+ 
+      // json format - >  javascript object notation 
+      // api uses json format.
+// {
+//       "name": "sahil",                   
+//       "coursename":"js",
+//       "price": "free"
+// }
